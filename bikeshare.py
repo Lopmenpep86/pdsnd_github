@@ -201,8 +201,8 @@ def main():
 
         #To give the option to retrieve raw data, I got some guidance from Udacity Knowledge Centre (https://knowledge.udacity.com/questions/26261)
 
-        raw_data = input('\nWould you like to see 5 rows of data? Please enter yes or no:\n').lower()
-        if raw_data in ('yes', 'y'):
+        ride_data = input('\nWould you like to see 5 rows of data? Please enter yes or no:\n').lower()
+        if ride_data in ('yes', 'y'):
             i = 0
             while True:
                 print(df.iloc[i:i+5])
