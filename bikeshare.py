@@ -175,14 +175,14 @@ def user_stats(df):
 
         birth_year = df['Birth Year']
 
-        earliest_year = birth_year.min()
-        print('The earliest birth year is: {}'.format(earliest_year))
+        earliest_birth_year = birth_year.min()
+        print('The earliest birth year is: {}'.format(earliest_birth_year))
 
-        most_recent_year = birth_year.max()
-        print('The most recent birth year is: {}'.format(most_recent_year))
+        most_recent_birth_year = birth_year.max()
+        print('The most recent birth year is: {}'.format(most_recent_birth_year))
 
-        most_common_year = birth_year.value_counts().idxmax()
-        print('The most common birth year is: {}'.format(most_common_year))
+        most_common_birth_year = birth_year.value_counts().idxmax()
+        print('The most common birth year is: {}'.format(most_common_birth_year))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
